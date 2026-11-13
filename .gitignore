@@ -1,0 +1,10 @@
+.env
+.env.local
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+snapshots/*.snapshot
+demo/dlss/originaux/
+dist/

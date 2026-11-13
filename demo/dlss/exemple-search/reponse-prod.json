@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "query": "En mode DLAA (Deep Learning Anti-Aliasing), quel est le rapport entre la résolution d’entrée et la résolution de sortie ?",
+  "metric": "cosine",
+  "sources": [
+    {
+      "source_name": "DLSS_Programming_Guide_Release.pdf",
+      "source_type": "pdf",
+      "metadata": {
+        "corpus": "nvidia-dlss-9981c635",
+        "editeur": "NVIDIA",
+        "url": "https://raw.githubusercontent.com/NVIDIA/DLSS/9981c6350dc58c0ce21f024fd65e31e851c31689/doc/DLSS_Programming_Guide_Release.pdf",
+        "sha256": "dca4d2e68ccedc04a431803595867a893474b1cce033e65a41e9eab9f6b436f8"
+      },
+      "chunk_id": "f00cad53-0ae5-5014-8304-3f4743835cb0",
+      "document_id": "c2c7d21db2092b5e30496fad8f54ead2e4a02f9c1dc9a444f0e002e89524e41b",
+      "chunk_index": 73,
+      "page": 21,
+      "citation": "S1"
+    }
+  ],
+  "detail": null,
+  "mode": "prod",
+  "answer": "L'input et l'output sont réglés à la même valeur [S1]. DLAA est un mode qualité performance.",
+  "provider": "ollama",
+  "model": "gemma3:4b"
+}

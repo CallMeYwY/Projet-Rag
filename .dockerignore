@@ -1,0 +1,10 @@
+.git
+.env*
+.venv
+**/__pycache__
+.pytest_cache
+snapshots
+*.zip
+.DS_Store
+demo/dlss/
+dist/

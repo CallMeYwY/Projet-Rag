@@ -1,0 +1,10 @@
+# Les quatre dépendances du prototype gardent leurs versions d'origine.
+fastapi==0.162.4
+uvicorn[standard]==0.54.0
+qdrant-client==1.20.0
+httpx==0.28.1
+pydantic>=2.10,<3
+python-multipart>=0.0.22,<1
+pypdf>=5,<7
+python-docx>=1.1.2,<2
+Pillow>=10,<13

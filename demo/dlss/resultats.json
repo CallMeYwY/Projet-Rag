@@ -1,0 +1,288 @@
+{
+  "revision": "9981c6350dc58c0ce21f024fd65e31e851c31689",
+  "corpus": "nvidia-dlss-9981c635",
+  "health": {
+    "status": "ready",
+    "qdrant": "ok",
+    "embeddings": "ok",
+    "details": []
+  },
+  "results": [
+    {
+      "case": "dlaa",
+      "question": "En mode DLAA (Deep Learning Anti-Aliasing), quel est le rapport entre la résolution d’entrée et la résolution de sortie ?",
+      "top_k": 5,
+      "evidence_in_prompt": true,
+      "ranking": [
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 21,
+          "score": 0.781,
+          "chunk_id": "f00cad53-0ae5-5014-8304-3f4743835cb0",
+          "supports": true
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 3,
+          "score": 0.7195,
+          "chunk_id": "99342cb8-8bb9-5dcf-abba-7cd747d060d3",
+          "supports": true
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 5,
+          "score": 0.6941,
+          "chunk_id": "f5046da6-7b49-5f5d-99ca-4c9afe7ab47c",
+          "supports": false
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 3,
+          "score": 0.6842,
+          "chunk_id": "2a3f34d9-a98a-58b9-b98c-8709ba994154",
+          "supports": true
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 31,
+          "score": 0.6832,
+          "chunk_id": "f0bc1788-2fcb-587b-bb3a-35467d676617",
+          "supports": false
+        }
+      ],
+      "answer": "What is referred to as “DLAA” or Deep Learning Anti-Aliasing refers to when the input and output render sizes are set to the same value [S1]. \nCela signifie que la résolution d'entrée et de sortie sont égales [S1].",
+      "provider": "ollama",
+      "model": "gemma3:4b",
+      "citations": [
+        {
+          "cite": "S1",
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 21,
+          "supported": true
+        }
+      ],
+      "expected_answer": true,
+      "cites_support": true
+    },
+    {
+      "case": "motion",
+      "question": "DLSS Ray Reconstruction : quels sont les deux formats de texture acceptés pour les Motion Vectors ?",
+      "top_k": 5,
+      "evidence_in_prompt": true,
+      "ranking": [
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 26,
+          "score": 0.771,
+          "chunk_id": "8f084884-1273-5bea-8e17-95c222413ec1",
+          "supports": true
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 23,
+          "score": 0.7678,
+          "chunk_id": "ef8d64c8-b0fd-530f-a0e2-7733c1a1c56f",
+          "supports": true
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 26,
+          "score": 0.762,
+          "chunk_id": "266ecd9f-67c2-5e58-9223-60e0837a8778",
+          "supports": false
+        },
+        {
+          "file": "DLSS-RR Integration Guide.pdf",
+          "page": 7,
+          "score": 0.7573,
+          "chunk_id": "3a61f3d1-2232-51ce-acc6-b0be72c5517a",
+          "supports": false
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 29,
+          "score": 0.7557,
+          "chunk_id": "2c6ca050-a605-53c9-aba2-155f30bfea45",
+          "supports": false
+        }
+      ],
+      "answer": "RG32_FLOAT ou RG16_FLOAT [S3] Les motion vectors doivent être envoyés sous forme de flottants [S1]. DLSS utilise des vecteurs de mouvement par pixel [S3].",
+      "provider": "ollama",
+      "model": "gemma3:4b",
+      "citations": [
+        {
+          "cite": "S1",
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 26,
+          "supported": true
+        },
+        {
+          "cite": "S3",
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 26,
+          "supported": false
+        }
+      ],
+      "expected_answer": true,
+      "cites_support": true
+    },
+    {
+      "case": "6x",
+      "question": "En mode 6X de DLSS Multi Frame Generation, combien d’images supplémentaires sont générées pour une image rendue ?",
+      "top_k": 5,
+      "evidence_in_prompt": true,
+      "ranking": [
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 3,
+          "score": 0.7342,
+          "chunk_id": "00c7537e-15ea-5c31-a3bc-aa323f3175fd",
+          "supports": false
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 6,
+          "score": 0.7069,
+          "chunk_id": "ce781fab-198c-5c17-9c41-87c93ca8a006",
+          "supports": true
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 4,
+          "score": 0.6996,
+          "chunk_id": "e7ef6cf4-33ea-596f-88a4-ff2745618727",
+          "supports": false
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 41,
+          "score": 0.6996,
+          "chunk_id": "6bdb4014-f9b6-5a32-931d-9d44ca2b491c",
+          "supports": false
+        },
+        {
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 4,
+          "score": 0.6955,
+          "chunk_id": "075745b0-10db-548f-a540-19561cabbb0a",
+          "supports": false
+        }
+      ],
+      "answer": "Six images supplémentaires sont générées. [S3]\nDLSS “Dynamic” est réglé à 6x par défaut.",
+      "provider": "ollama",
+      "model": "gemma3:4b",
+      "citations": [
+        {
+          "cite": "S3",
+          "file": "RTX UI Developer Guidelines.pdf",
+          "page": 4,
+          "supported": false
+        }
+      ],
+      "expected_answer": false,
+      "cites_support": false
+    },
+    {
+      "case": "reflets",
+      "question": "À quoi servent les Specular Motion Vectors de DLSS Ray Reconstruction pour les reflets en mouvement ?",
+      "top_k": 5,
+      "evidence_in_prompt": true,
+      "ranking": [
+        {
+          "file": "DLSS-RR Integration Guide.pdf",
+          "page": 17,
+          "score": 0.7808,
+          "chunk_id": "f583d491-c804-57d1-b0ea-ecc3c9d9335d",
+          "supports": true
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 29,
+          "score": 0.7027,
+          "chunk_id": "b82265a7-da64-5b1b-bae2-3c54ce377889",
+          "supports": false
+        },
+        {
+          "file": "DLSS-RR Integration Guide.pdf",
+          "page": 22,
+          "score": 0.7011,
+          "chunk_id": "4d645f1b-25eb-5a5d-863c-87e3dafb0c9f",
+          "supports": false
+        },
+        {
+          "file": "DLSS-RR Integration Guide.pdf",
+          "page": 8,
+          "score": 0.6973,
+          "chunk_id": "dedc2657-3fcc-5aad-8689-53d7ad3bd5ac",
+          "supports": false
+        },
+        {
+          "file": "DLSS_Programming_Guide_Release.pdf",
+          "page": 26,
+          "score": 0.6942,
+          "chunk_id": "266ecd9f-67c2-5e58-9223-60e0837a8778",
+          "supports": false
+        }
+      ],
+      "answer": "Améliorer la qualité des reflets en mouvement. [S1]\nDLSS Ray Reconstruction utilise les vecteurs de mouvement spéculaires pour améliorer la qualité des reflets lors du mouvement. [S1]",
+      "provider": "ollama",
+      "model": "gemma3:4b",
+      "citations": [
+        {
+          "cite": "S1",
+          "file": "DLSS-RR Integration Guide.pdf",
+          "page": 17,
+          "supported": true
+        }
+      ],
+      "expected_answer": true,
+      "cites_support": true
+    }
+  ],
+  "documents": [
+    {
+      "file": "DLSS_Programming_Guide_Release.pdf",
+      "sha256": "dca4d2e68ccedc04a431803595867a893474b1cce033e65a41e9eab9f6b436f8",
+      "document_id": "c2c7d21db2092b5e30496fad8f54ead2e4a02f9c1dc9a444f0e002e89524e41b",
+      "chunks_indexed": 301
+    },
+    {
+      "file": "DLSS-RR Integration Guide.pdf",
+      "sha256": "cc53ddaab916e067525077655f947458fc1854abc15b9cc3e484ad8eb9e96b1a",
+      "document_id": "dbc3e15aaa1be9b2b131708b1e8d033efa1fcd0d360beb24644f821f52623b50",
+      "chunks_indexed": 112
+    },
+    {
+      "file": "RTX UI Developer Guidelines.pdf",
+      "sha256": "33ece89ff05e2ac0ce747ec467d4780314711aee532673fe6dfcc6cecd40e7d2",
+      "document_id": "2b9908bedff2ff4f653c3410b5d07a8d8305908cc06d7c3a9e35ab60f8408d25",
+      "chunks_indexed": 38
+    }
+  ],
+  "focused_check": {
+    "question": "En mode 6X de DLSS Multi Frame Generation, combien d’images supplémentaires sont générées pour une image rendue ?",
+    "filters": {
+      "metadata.corpus": "nvidia-dlss-9981c635",
+      "source_name": "RTX UI Developer Guidelines.pdf",
+      "page": 6
+    },
+    "answer": "Cinq images supplémentaires sont générées. [S3]",
+    "sources": [
+      {
+        "id": "S1",
+        "file": "RTX UI Developer Guidelines.pdf",
+        "page": 6
+      },
+      {
+        "id": "S2",
+        "file": "RTX UI Developer Guidelines.pdf",
+        "page": 6
+      },
+      {
+        "id": "S3",
+        "file": "RTX UI Developer Guidelines.pdf",
+        "page": 6
+      }
+    ]
+  }
+}

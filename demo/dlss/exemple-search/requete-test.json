@@ -1,0 +1,5 @@
+{
+  "query": "En mode DLAA (Deep Learning Anti-Aliasing), quel est le rapport entre la résolution d’entrée et la résolution de sortie ?",
+  "mode": "test",
+  "top_k": 1
+}
